@@ -13,6 +13,11 @@
   <body>
     <div class="container black">
       <div id="cardRegister" class="black">
+        <div class="header">
+          <button class="game" onClick="location.href=root+'room.html'">
+            ir para o jogo
+          </button>
+        </div>
         <h1>Gerador de cartas CAH</h1>
         <form id="registerCard">
           <span class="cardTypeLabel">Tipo de carta</span>
@@ -49,8 +54,24 @@
             <input id="ageRestriction" name="ageRestriction" type="checkbox" />
             Inapropriado para menores de 16 anos
           </label>
+          <div class="inputCollumnContainer">
 
-          <input id="cardRegisterSubmitBtn" class="black" type="submit" value="Criar carta" />
+            <div class="inputCollumn">
+              <label for="draw"> Quantas cartas comprar: </label>
+              <input id="draw" name="draw" type="number" min="0" max="2" value="0"/>
+            </div>
+            <div class="inputCollumn">
+              <label for="pick"> Quantas cartas largar: </label>
+              <input id="pick" name="pick" type="number" min="1" max="3" value="1"/>
+            </div>
+          </div>
+
+          <input
+            id="cardRegisterSubmitBtn"
+            class="black"
+            type="submit"
+            value="Criar carta"
+          />
         </form>
       </div>
     </div>
