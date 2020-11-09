@@ -1,3 +1,4 @@
+let root = window.location.href
 const blackCards = [
   {
     cardContent: 'o que é mais emo?',
@@ -181,10 +182,12 @@ function toggleCardStyle() {
     document
       .querySelectorAll('.white')
       .forEach((item) => item.classList.replace('white', 'black'));
+      document.querySelector(".inputCollumnContainer").classList.remove("displayNone")
   } else {
     document
       .querySelectorAll('.black')
       .forEach((item) => item.classList.replace('black', 'white'));
+      document.querySelector(".inputCollumnContainer").classList.add("displayNone")
   }
 }
 

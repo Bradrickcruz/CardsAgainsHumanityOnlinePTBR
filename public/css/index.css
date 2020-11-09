@@ -34,7 +34,15 @@ form {
   background-color: #fff;
   color:#222
 }
-
+.header{
+  display: flex;
+  justify-content:end
+}
+.game{
+  border:none;
+  border-radius: 2px;
+  padding:3px 5px;
+}
 #cardTypeContainer{
   width: 100%;
   display: flex;
@@ -71,4 +79,31 @@ form {
 #cardRegisterSubmitBtn.white{
   background-color:#222;
   color:#eee;
+}
+
+.inputCollumn{
+  display:flex;
+  flex-direction:column;
+  font-size:14px;
+  align-items:center;
+}
+
+.inputCollumnContainer{
+  width:100%;
+  margin-top:10px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around
+}
+
+.inputCollumn input{
+  width:50px;
+}
+.inputCollumn label{
+  width:100px;
+  text-align: center;
+}
+
+.displayNone{
+  display:none;
 }
