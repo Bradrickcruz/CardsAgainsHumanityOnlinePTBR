@@ -1,0 +1,74 @@
+*{
+  padding: 0;
+  margin:0
+}
+body {
+  font-family: 'roboto';
+}
+.container{
+  width:100vw;
+  height: 100vh;
+}
+.container.black{
+background-color: #eee;
+}
+.container.white{
+background-color: #222;
+}
+.container,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#cardRegister {
+  padding: 15px;
+  border-radius: 10px;
+}
+#cardRegister.black{
+  background-color: #111;
+  color:#eee
+}
+#cardRegister.white {
+  background-color: #fff;
+  color:#222
+}
+
+#cardTypeContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around
+}
+.cardTypeLabel{
+  margin: 5px 0
+}
+
+#cardRegister textarea{
+  width: 100%;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 5px 1px;
+  resize:none;
+}
+#ageRestriction{
+  margin-right: 5px;
+}
+#cardRegisterSubmitBtn{
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px -1px black;
+}
+#cardRegisterSubmitBtn.black{
+  background-color:#eee;
+  color:#222
+}
+#cardRegisterSubmitBtn.white{
+  background-color:#222;
+  color:#eee;
+}
