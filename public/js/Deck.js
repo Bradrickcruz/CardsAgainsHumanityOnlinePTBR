@@ -1,12 +1,10 @@
 class Deck {
-  constructor(firstPlayer, whiteCardsHandQty = 3) {
+  constructor(selectedBlackCards,selectedWhiteCards) {
     this.deck = {
-      gameBlackCards: blackCards,
-      gameWhiteCards: whiteCards,
+      gameBlackCards: selectedBlackCards,
+      gameWhiteCards: selectedWhiteCards,
     };
-    this.players = [firstPlayer];
-    this.whiteCardsHandQty = whiteCardsHandQty;
-    this.round = 0;
+
     this.discards = {
       blackCards: [],
       whiteCards: [],
@@ -44,3 +42,5 @@ function shuffle(array) {
   }
   return array;
 }
+
+let firstDeck = new Deck(blackCards,whiteCards);
